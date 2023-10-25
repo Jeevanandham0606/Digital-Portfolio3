@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html long="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE-edge">
+        <meta name="viewport"content="width=device-width, initial-scale-1.0">
+        <link rel="stylesheet" href= "style.css">
+        <tittle>personal portfolio website</tittle>
+    </head>
+    <body>
+     <div class="hero">
+                <nav>
+                <p class="logo">JEEVA</p>
+                
+                <ul> 
+                 
+                    <li><a href="#home"> HOME</a></li>
+                    <li><a href="#about"> ABOUT</a></li>
+                    <li><a href="#certificates">CERTIFICATES</a></li>
+                    <li><a href="#services"> SERVICES</a></li>
+                    <li><a href="#contact"> CONTACT</a></li>
+                    
+                    </ul>
+                    
+                        <a href="#" class="btn">Hire me</a>
+                           
+           </nav>
+    
+        </div>
+        <div class="detail">
+            <h1>Hey,I'm JEEVA</h1><span>PERSONAL PORTFOLIO</span>
+            <p>This my official webite to show all details and work <br> experience of web devlopment</p>
+            
+            </div>
+        <div class="image">
+            <img src="jeeva1 (2).jpg"alt="">
+            </div>
+<!-- -------------about------------ -->
+           <div id="about">
+               <div class="container">
+                  <div class="row">
+                    <div class="about-col-1">
+                        <img src="jeeva1.jpg">
+                    </div>
+                    <div class="about-col-2">
+                       <h1 class="sub title">About Me</h1>  
+                    <p> I am Jeevanandham G I am currently studied  third year B.Sc computer science in Arts and science college in sathymangalam. In my acodamic skills such as reading, writing, problem solving,typing also my growth.  </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        
+                        
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                        <li><span>Web Development </span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+     
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-current</span><br>UI/UX Design Training at ET Institute</li>
+                        <li><span>2019-2021</span><br>Team Lead at Starapp LLC.</li>
+                        <li><span>2017-2019</span><br>Intership at ekart ecomputerscience.</li>
+                    </ul>
+                </div>
+
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+   <!-- ---------------services ------------------ -->
+   <div id="Services">
+    <div class="constainer">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sitnamet,consectrtur adipiscing elit. sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#"> learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sitnamet,consectrtur adipiscing elit. sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#"> learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-apple-whole"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sitnamet,consectrtur adipiscing elit. sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#"> learn more</a>
+            </div>
+        </div>
+    </div>
+    <h1>My Certificates</h1>
+    <div  class="img-container">
+        <img src="./WhatsApp Image 2023-10-25 at 4.57.11 PM (1).jpeg">
+        <img src="./WhatsApp Image 2023-10-25 at 6.34.38 PM.jpeg">
+        <img src="./WhatsApp Image 2023-10-25 at 4.57.11 PM.jpeg">
+        <img src="./WhatsApp Image 2023-10-25 at 4.57.12 PM (1).jpeg">
+        <img src="./WhatsApp Image 2023-10-25 at 4.57.12 PM.jpeg">
+    </div>
+
+    <!-----------------contect------------ -->
+        <div id="contact";></div>
+            <div class="container"></div>
+                <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">My contact</h1>
+                    <p><i class="fa-regular fa-paper-plane" style="color: #1859c9;"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                  <div class="Social Icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+       
+                  </div>
+                  <a href="./Jeevanantham G Resume.pdf"Download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                <input type="text" name="Name" placeholder="Your Name " required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                <botton type="Submit" class="btn btn2"> submit</botton> 
+                    </form>
+                </div>
+
+                </div>
+    
+        <div class="copyright">
+            <p>copyright @ jeevanandham G<i class="fa-solid fa-heart"></i> </p>
+        </div>
+    
+    
+        
+
+                    
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        
+        }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        
+        }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+   </script>
+   <script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+   </script>
+
+   <!-- Main JS File -->
+   <script src="JS  script.js"></script>
+   <!--Fontawesome JS File (Icon File)  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    </body>
+</html>
+ 
